@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import air from './utils/air.png'
 import humidity from './utils/humidity.png'
-import axios from 'axios'
 
 const WeatherDetails = () => {
 
