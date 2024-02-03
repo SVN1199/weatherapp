@@ -1,0 +1,128 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  overflow: hidden;
+  user-select: none;
+}
+
+
+.weather_body {
+  margin-top: 5vh;
+  height: 90vh;
+  border-radius: 5px;
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.inner_weather_body{
+  position: relative;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+
+.citnotfound{
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.loading{
+  position: relative;
+  left: 45%;
+  border: 2px solid white;
+  border-radius: 50%;
+  border-top: 2px solid skyblue;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.weather_condition{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 13px;
+}
+
+.inputValue {
+  position: relative;
+  left: 20%;
+}
+
+.inputValue input {
+  margin-top: 15px;
+  padding: 4px !important;
+  width: 50%;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+}
+
+.inputValue span {
+  margin-top: 15px;
+  border: none;
+}
+
+.searchicon{
+  cursor: pointer;
+  color:royalblue;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.notfoundcity{
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+}
+
+.latlon ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.humandair ul li {
+  list-style-type: none;
+}
+
+.humandair ul li span {
+  margin-top: 5px;
+}
+
+.humandair ul li div {
+  font-size: 12px;
+  opacity: 0.88;
+}
+
+.humandair ul li b{
+  font-size: 14px;
+}
+
+.humandair ul li img {
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.designedby {
+  font-size: 11px;
+}
